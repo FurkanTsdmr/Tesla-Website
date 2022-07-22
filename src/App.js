@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom'
 import MenuItem from './MenuItem/MenuItem';
 import Menu from './Menu/Menu';
+import HeaderBlock from './HeaderBlock/HeaderBlock';
 
 function App() {
   const [isMenuOpen,setIsMenuOpen] = useState(false)
@@ -17,6 +18,7 @@ function App() {
       <div className="App">
         <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         {isMenuOpen && <Menu/>}
+        <HeaderBlock/>
       </div>
     </Router>
   );
