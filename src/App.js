@@ -7,15 +7,16 @@ import {
   Route,
   Redirect
 } from 'react-router-dom'
+import MenuItem from './MenuItem/MenuItem';
+import Menu from './Menu/Menu';
 
 function App() {
   const [isMenuOpen,setIsMenuOpen] = useState(false)
   return (
     <Router>
       <div className="App">
-        {/* Header */}
         <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-        {/* HeaderBlock */}
+        {isMenuOpen && <Menu/>}
       </div>
     </Router>
   );
