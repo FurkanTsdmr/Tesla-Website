@@ -1,5 +1,5 @@
 
-In this project, i don't use Firebase so SignIn and Create Account don't work but buttons are active.
+In this project, i don't use Firebase so SignIn and Create Account don't work but buttons and forms are active.
 ![image](https://user-images.githubusercontent.com/66878884/180607005-6df8f6db-37b5-4614-a38f-c8617abd7e43.png)
 <hr>
 
