@@ -10,7 +10,7 @@ import {
 import MenuItem from './MenuItem/MenuItem';
 import Menu from './Menu/Menu';
 import HeaderBlock from './HeaderBlock/HeaderBlock';
-import Login from './Login/Login';
+import Login from './Login/Login'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
