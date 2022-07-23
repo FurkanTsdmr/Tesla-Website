@@ -10,15 +10,23 @@ import {
 import MenuItem from './MenuItem/MenuItem';
 import Menu from './Menu/Menu';
 import HeaderBlock from './HeaderBlock/HeaderBlock';
+import Login from './Login/Login';
 
 function App() {
-  const [isMenuOpen,setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <Router>
       <div className="App">
-        <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-        {isMenuOpen && <Menu/>}
-        <HeaderBlock/>
+        <Switch>
+          <Route exact path='/'>
+            <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            {isMenuOpen && <Menu />}
+            <HeaderBlock />
+          </Route>
+          <Route exact path='/login'>
+            <Login />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );

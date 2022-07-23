@@ -65,3 +65,20 @@
     font-weight: 600;
     outline: none;
 }
+
+.headerBlock__buttonPrimary{
+    background-color:#393c41 ;
+    color:white;
+}
+.headerBlock__buttonPrimary:hover{
+    opacity: 0.8;
+}
+
+.headerBlock__buttonSecondary{
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+}
+.headerBlock__buttonSecondary:hover{
+    opacity: 0.6;
+}
