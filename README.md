@@ -1,5 +1,13 @@
 
 In this project, i don't use Firebase so SignIn and Create Account don't work but buttons are active.
+![image](https://user-images.githubusercontent.com/66878884/180607005-6df8f6db-37b5-4614-a38f-c8617abd7e43.png)
+<hr>
+![image](https://user-images.githubusercontent.com/66878884/180607010-4659e48e-a6aa-4657-ac28-e0139fd1e24f.png)
+<hr>
+![image](https://user-images.githubusercontent.com/66878884/180607018-47c99e69-dea9-4292-9a37-b21efb97c18d.png)
+<hr>
+![image](https://user-images.githubusercontent.com/66878884/180607029-2f3b8c2a-9597-4e14-85ba-36ba0f998430.png)
+<hr>
 
 # Getting Started with Create React App and Redux
 
