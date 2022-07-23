@@ -1,22 +1,21 @@
 import React, { useState } from 'react'
-import './Login.css'
+import './SignUp.css'
 import { Link, useHistory } from 'react-router-dom'
 import LanguageOutlinedIcon from '@material-ui/icons/LanguageOutlined'
 import { useDispatch } from 'react-redux'
 import { login } from '../features/userSlice'
-import ButtonPrimary from '../Login/ButtonPrimary/ButtonPrimary'
-import ButtonSecondary from '../Login/ButtonSecondary/ButtonSecondary'
 
-function Login() {
+function Signup() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const history = useHistory()
+  const [fName, setFName] = useState('')
+  const [lName, setLName] = useState('')
 
-  
+
   return (
-    <div className='login'>
-      <div className='login__header'>
-        <div className='login__logo'>
+    <div className='signup'>
+      <div className='signup__header'>
+        <div className='signup__logo'>
           <Link to='/'>
             {' '}
             <img
@@ -25,13 +24,27 @@ function Login() {
             />
           </Link>
         </div>
-        <div className='login__language'>
+        <div className='signup__language'>
           <LanguageOutlinedIcon /> <span>en-US</span>
         </div>
       </div>
-      <div className='login__info'>
-        <h1>Sign In</h1>
-        <form className='login__form'>
+      <div className='signup__info'>
+        <h1>Create Account</h1>
+        <form className='signup__form'>
+          <label htmlFor='fName'>First Name</label>
+          <input
+            id='fName'
+            type='text'
+            value={fName}
+            onChange={(e) => setFName(e.target.value)}
+          />
+          <label htmlFor='lName'>Last Name</label>
+          <input
+            id='lName'
+            type='text'
+            value={lName}
+            onChange={(e) => setLName(e.target.value)}
+          />
           <label htmlFor='email'>Email Address</label>
           <input
             id='email'
@@ -46,17 +59,19 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <ButtonPrimary name='Sign In' type='submit' />
+          <button type='submit'>
+            Create Account
+          </button>
         </form>
-        <div className='login__divider'>
+        <div className='signup__divider'>
           <hr /> <span>OR</span> <hr />
         </div>
-        <Link to='/signup'>
-          <ButtonSecondary name='create account' />
+        <Link to='/login'>
+          <button>Sign In</button>
         </Link>
       </div>
     </div>
   )
 }
 
-export default Login
+export default Signup
