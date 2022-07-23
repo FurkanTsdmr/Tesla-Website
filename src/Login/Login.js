@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './Login.css'
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import ButtonPrimary from './ButtonPrimary/ButtonPrimary';
+import ButtonSecondary from './ButtonSecondary/ButtonSecondary'
 
 function Login() {
 
@@ -42,6 +43,12 @@ function Login() {
                     />
                     <ButtonPrimary name='Sign In' type='submit' onClick={signIn} />
                 </form>
+                <div className="login__divider">
+                    <hr/><span>OR</span><hr/>
+                </div>
+                <Link to='/signup'>
+                <ButtonSecondary name='create account'/>
+                </Link>
             </div>
         </div>
     )
